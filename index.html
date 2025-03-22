@@ -1,489 +1,530 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Patrick Biá - Consultoria especializada em pesquisa de felicidade no trabalho utilizando os modelos PERMA+4 e OCAI. Transforme o ambiente da sua empresa e alcance melhores resultados.">
-  <meta name="keywords" content="felicidade no trabalho, PERMA+4, OCAI, consultoria empresarial, pesquisa organizacional, Patrick Biá, bem-estar organizacional, cultura empresarial">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Patrick Biá">
-  <meta name="language" content="pt-BR">
-  <meta name="revisit-after" content="7 days">
-  
-  <!-- Preload Font Awesome -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
-  
-  <!-- Preload Google Fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😊</text></svg>">
-  
-  <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:title" content="Patrick Biá - Pesquisa e Consultoria em Felicidade no Trabalho">
-  <meta property="og:description" content="Transforme o ambiente de trabalho da sua empresa através de pesquisas e consultorias especializadas em felicidade organizacional.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://patrickbia.com">
-  
-  <title>Patrick Biá - Pesquisa e Consultoria em Felicidade no Trabalho</title>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* Form focus effects */
-    input:focus, textarea:focus {
-      outline: none;
-      box-shadow: 0 0 0 3px rgba(255, 145, 0, 0.2); /* Laranja translúcido */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Biá - Consultoria especializada em Gestão da Felicidade no Trabalho, utilizando modelos PERMA+4 e OCAI para transformar organizações">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="author" content="Patrick Biá">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    <meta name="theme-color" content="#FF9100">
+    <meta name="keywords" content="consultoria, felicidade no trabalho, PERMA+4, OCAI, gestão de pessoas, cultura organizacional, Patrick Biá">
     
-    /* Hover effects */
-    .service-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Patrick Biá - Consultoria em Gestão da Felicidade">
+    <meta property="og:description" content="Transforme sua organização com nossa consultoria especializada em Gestão da Felicidade no Trabalho">
+    <meta property="og:type" content="website">
     
-    .methodology-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .methodology-card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Button hover effect */
-    .cta-button {
-      transition: transform 0.2s ease;
-    }
-    .cta-button:hover {
-      transform: scale(1.05);
-    }
-
-    /* Smooth transitions for nav links */
-    .nav-link {
-      transition: color 0.3s ease;
-    }
-    .nav-link:hover {
-      color: #FF9100; /* Laranja de destaque */
-    }
-  </style>
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Patrick Biá Consultoria",
-      "description": "Consultoria especializada em pesquisa de felicidade no trabalho utilizando os modelos PERMA+4 e OCAI",
-      "url": "https://patrickbia.com",
-      "sameAs": [
-          "https://www.linkedin.com/in/patrickbia",
-          "https://www.instagram.com/patrickbia"
-      ]
-  }
-  </script>
-</head>
-<body class="bg-[#1C1C1C] text-white">
-  <!-- Navigation -->
-  <nav class="fixed w-full bg-[#1C1C1C] shadow-md z-50">
-    <div class="container mx-auto px-6 py-3">
-      <div class="flex items-center justify-between">
-        <div class="text-2xl font-bold">
-          <!-- Ajuste a cor da logo conforme necessário -->
-          <img src="./src/PatrickBiá_marca_R_negativa.png" alt="Logo Patrick Biá" class="w-32">
-        </div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#inicio" class="nav-link text-gray-300 hover:text-[#FF9100]">Início</a>
-          <a href="#sobre" class="nav-link text-gray-300 hover:text-[#FF9100]">Sobre</a>
-          <a href="#servicos" class="nav-link text-gray-300 hover:text-[#FF9100]">Serviços</a>
-          <a href="#metodologia" class="nav-link text-gray-300 hover:text-[#FF9100]">Metodologia</a>
-          <a href="#contato" class="nav-link text-gray-300 hover:text-[#FF9100]">Contato</a>
-        </div>
-        <button class="md:hidden text-gray-300" id="mobile-menu-button">
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-      </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div class="hidden md:hidden bg-[#2C2C2C]" id="mobile-menu">
-      <div class="px-4 py-3 space-y-4">
-        <a href="#inicio" class="block text-gray-300 hover:text-[#FF9100]">Início</a>
-        <a href="#sobre" class="block text-gray-300 hover:text-[#FF9100]">Sobre</a>
-        <a href="#servicos" class="block text-gray-300 hover:text-[#FF9100]">Serviços</a>
-        <a href="#metodologia" class="block text-gray-300 hover:text-[#FF9100]">Metodologia</a>
-        <a href="#contato" class="block text-gray-300 hover:text-[#FF9100]">Contato</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="inicio" class="pt-24 pb-12 md:pt-32 md:pb-24 bg-gradient-to-br from-[#1C1C1C] to-[#2C2C2C]">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="hero-content md:w-1/2 text-center md:text-left">
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Transforme o Ambiente de Trabalho com Felicidade
-          </h1>
-          <p class="text-xl mb-8 text-gray-200">
-            Descubra como a metodologia PERMA+4 e OCAI podem revolucionar a cultura organizacional da sua empresa
-          </p>
-          <a href="#contato" class="cta-button inline-block bg-[#FF9100] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#e57f00] transition-colors duration-300">
-            Agende uma Consulta
-          </a>
-        </div>
-        <div class="md:w-1/2 mt-12 md:mt-0">
-          <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Equipe feliz no trabalho" class="rounded-lg shadow-2xl">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="sobre" class="py-20 bg-[#2C2C2C]">
-    <div class="container mx-auto px-6">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-12">Sobre Nossa Missão</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Consultoria em ação" class="rounded-lg shadow-lg">
-        </div>
-        <div>
-          <p class="text-lg text-gray-300 mb-6">
-            Nossa missão é transformar ambientes corporativos em espaços onde a felicidade e a produtividade andam juntas. Através de metodologias cientificamente comprovadas como PERMA+4 e OCAI, ajudamos empresas a construírem culturas organizacionais mais saudáveis e eficientes.
-          </p>
-          <div class="space-y-4 text-gray-200">
-            <div class="flex items-center">
-              <i class="fas fa-check-circle text-[#FF9100] text-xl mr-3"></i>
-              <span>Mais de 100 empresas atendidas</span>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-check-circle text-[#FF9100] text-xl mr-3"></i>
-              <span>Metodologia exclusiva e comprovada</span>
-            </div>
-            <div class="flex items-center">
-              <i class="fas fa-check-circle text-[#FF9100] text-xl mr-3"></i>
-              <span>Resultados mensuráveis e duradouros</span>
-            </div>
-          </div>
-
-          <!-- Carrossel de logos -->
-          <div class="mt-8">
-            <h3 class="text-xl font-bold text-white mb-4">Nossos Clientes</h3>
-            <div class="flex space-x-6 overflow-x-auto snap-x snap-mandatory">
-              <div class="flex-shrink-0 w-32 h-32 bg-white flex items-center justify-center border border-gray-200 rounded-lg snap-center">
-                <img src="./src/logo_dicasa.webp" alt="Logo Empresa 1" class="object-contain h-20">
-              </div>
-              <div class="flex-shrink-0 w-32 h-32 bg-white flex items-center justify-center border border-gray-200 rounded-lg snap-center">
-                <img src="./src/logo_sespa.png" alt="Logo Empresa 2" class="object-contain h-20">
-              </div>
-              <div class="flex-shrink-0 w-32 h-32 bg-white flex items-center justify-center border border-gray-200 rounded-lg snap-center">
-                <img src="./src/logo_farmalider.jpg" alt="Logo Empresa 3" class="object-contain h-20">
-              </div>
-              <div class="flex-shrink-0 w-32 h-32 bg-white flex items-center justify-center border border-gray-200 rounded-lg snap-center">
-                <img src="./src/logo_oab.jpg" alt="Logo Empresa 4" class="object-contain h-20">
-              </div>
-              <!-- Adicione mais logos conforme necessário -->
-            </div>
-          </div>
-          <!-- Fim do Carrossel -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="servicos" class="py-20 bg-[#1C1C1C]">
-    <div class="container mx-auto px-6">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-12">Nossos Serviços</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="service-card bg-[#2C2C2C] rounded-lg p-8 hover:shadow-xl transition-shadow">
-          <div class="text-[#FF9100] text-4xl mb-4">
-            <i class="fas fa-search"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 text-white">Pesquisa de Felicidade</h3>
-          <p class="text-gray-300">
-            Avaliação completa do nível de felicidade e engajamento dos colaboradores usando metodologias validadas internacionalmente.
-          </p>
-        </div>
-        <!-- Service 2 -->
-        <div class="service-card bg-[#2C2C2C] rounded-lg p-8 hover:shadow-xl transition-shadow">
-          <div class="text-[#FF9100] text-4xl mb-4">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 text-white">Consultoria Personalizada</h3>
-          <p class="text-gray-300">
-            Desenvolvimento de estratégias específicas para sua empresa, baseadas nos resultados das pesquisas e nas necessidades identificadas.
-          </p>
-        </div>
-        <!-- Service 3 -->
-        <div class="service-card bg-[#2C2C2C] rounded-lg p-8 hover:shadow-xl transition-shadow">
-          <div class="text-[#FF9100] text-4xl mb-4">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 text-white">Análise de Resultados</h3>
-          <p class="text-gray-300">
-            Interpretação detalhada dos dados coletados e recomendações práticas para melhorias no ambiente organizacional.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Methodology Section -->
-  <section id="metodologia" class="py-20 bg-[#2C2C2C]">
-    <div class="container mx-auto px-6">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-12">Nossa Metodologia</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- PERMA+4 -->
-        <div class="methodology-card bg-[#1C1C1C] rounded-lg p-8">
-          <h3 class="text-2xl font-bold text-[#FF9100] mb-6">PERMA+4</h3>
-          <div class="space-y-4 text-gray-300">
-            <div class="flex items-start">
-              <i class="fas fa-star text-[#FF9100] mt-1 mr-3"></i>
-              <div>
-                <h4 class="font-semibold text-white">P - Positive Emotions</h4>
-                <p>Emoções positivas no ambiente de trabalho</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-hands-helping text-[#FF9100] mt-1 mr-3"></i>
-              <div>
-                <h4 class="font-semibold text-white">E - Engagement</h4>
-                <p>Engajamento com as atividades</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-users text-[#FF9100] mt-1 mr-3"></i>
-              <div>
-                <h4 class="font-semibold text-white">R - Relationships</h4>
-                <p>Relacionamentos positivos</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-bullseye text-[#FF9100] mt-1 mr-3"></i>
-              <div>
-                <h4 class="font-semibold text-white">M - Meaning</h4>
-                <p>Significado no trabalho</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-trophy text-[#FF9100] mt-1 mr-3"></i>
-              <div>
-                <h4 class="font-semibold text-white">A - Accomplishment</h4>
-                <p>Realização e conquistas</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- OCAI -->
-        <div class="methodology-card bg-[#1C1C1C] rounded-lg p-8">
-          <h3 class="text-2xl font-bold text-[#FF9100] mb-6">OCAI</h3>
-          <p class="text-gray-300 mb-6">
-            O Organizational Culture Assessment Instrument (OCAI) é uma ferramenta que nos permite:
-          </p>
-          <div class="space-y-4 text-gray-300">
-            <div class="flex items-start">
-              <i class="fas fa-chart-pie text-[#FF9100] mt-1 mr-3"></i>
-              <p>Avaliar a cultura organizacional atual</p>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-arrows-alt text-[#FF9100] mt-1 mr-3"></i>
-              <p>Identificar a cultura desejada</p>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-road text-[#FF9100] mt-1 mr-3"></i>
-              <p>Planejar a transformação cultural</p>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-check-double text-[#FF9100] mt-1 mr-3"></i>
-              <p>Medir o progresso das mudanças</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contato" class="py-20 bg-[#1C1C1C]">
-    <div class="container mx-auto px-6">
-      <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-12">Entre em Contato</h2>
-      <div class="max-w-2xl mx-auto">
-        <form id="contact-form" class="space-y-6">
-          <div>
-            <label for="name" class="block text-gray-300 font-medium mb-2">Nome</label>
-            <input type="text" id="name" name="name" required
-              class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-[#2C2C2C] text-white focus:border-[#FF9100] focus:ring-2 focus:ring-[#FF9100] transition-colors">
-          </div>
-          <div>
-            <label for="email" class="block text-gray-300 font-medium mb-2">E-mail</label>
-            <input type="email" id="email" name="email" required
-              class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-[#2C2C2C] text-white focus:border-[#FF9100] focus:ring-2 focus:ring-[#FF9100] transition-colors">
-          </div>
-          <div>
-            <label for="company" class="block text-gray-300 font-medium mb-2">Empresa</label>
-            <input type="text" id="company" name="company" required
-              class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-[#2C2C2C] text-white focus:border-[#FF9100] focus:ring-2 focus:ring-[#FF9100] transition-colors">
-          </div>
-          <div>
-            <label for="message" class="block text-gray-300 font-medium mb-2">Mensagem</label>
-            <textarea id="message" name="message" rows="4" required
-              class="w-full px-4 py-3 rounded-lg border border-gray-600 bg-[#2C2C2C] text-white focus:border-[#FF9100] focus:ring-2 focus:ring-[#FF9100] transition-colors"></textarea>
-          </div>
-          <button type="submit"
-            class="w-full bg-[#FF9100] text-white font-semibold py-4 rounded-lg hover:bg-[#e57f00] transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg">
-            Enviar Mensagem
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#2C2C2C] text-white py-12">
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <!-- Ajuste a cor da logo conforme necessário -->
-          <img src="./src/PatrickBiá_marca_H_negativa.png" alt="Logo Patrick Biá" class="w-32 mb-4">
-          <img src="./src/slogan_footer.png" alt="Slogan" class="w-60 mb-4">
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4">Contato</h3>
-          <div class="space-y-2 text-gray-300">
-            <p><i class="fas fa-envelope mr-2 text-[#FF9100]"></i> patrickfbv@gmail.com</p>
-            <p><i class="fas fa-phone mr-2 text-[#FF9100]"></i> (91) 9 8297-8579</p>
-          </div>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4">Redes Sociais</h3>
-          <div class="flex space-x-4">
-            <a href="www.linkedin.com/in/patrick-biá-viana-24338352" class="text-gray-300 hover:text-[#FF9100] transition-colors">
-              <i class="fab fa-linkedin text-2xl"></i>
-            </a>
-            <a href="https://www.instagram.com/patrickbiaviana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#FF9100] transition-colors">
-              <i class="fab fa-instagram text-2xl"></i>
-            </a>
-            <a href="#" class="text-gray-300 hover:text-[#FF9100] transition-colors">
-              <i class="fab fa-facebook text-2xl"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2025 Patrick Biá. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  
-  <!-- JavaScript -->
-  <script>
-    // Enhanced scroll reveal animations
-    ScrollReveal().reveal('.hero-content', { 
-      delay: 200,
-      distance: '50px',
-      origin: 'bottom',
-      duration: 1000,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)'
-    });
+    <title>Patrick Biá - Consultoria em Gestão da Felicidade</title>
     
-    ScrollReveal().reveal('.service-card', { 
-      delay: 200,
-      interval: 200,
-      distance: '30px',
-      origin: 'bottom',
-      duration: 800,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)',
-      mobile: true
-    });
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    ScrollReveal().reveal('.methodology-card', { 
-      delay: 300,
-      interval: 200,
-      distance: '30px',
-      origin: 'bottom',
-      duration: 1000,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)',
-      mobile: true
-    });
-
-    ScrollReveal().reveal('.section-title', {
-      delay: 100,
-      distance: '20px',
-      origin: 'top',
-      duration: 800,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)'
-    });
-
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Smooth scroll for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-          // Fecha o menu mobile se estiver aberto
-          mobileMenu.classList.add('hidden');
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Library for Scroll Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF9100',
+                        secondary: '#2C2C2C',
+                        dark: '#1C1C1C',
+                        accent: '#FF9100'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
         }
-      });
-    });
+    </script>
+</head>
+<body class="font-poppins bg-dark text-white">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-dark shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-primary hover:text-white transition-colors">
+                    <a href="#inicio"><img src="./src/PatrickBiá_marca_H_negativa.png" class="w-32" alt="Logo Patrick Biá"></a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-white hover:text-primary transition-colors">Sobre</a>
+                    <a href="#servicos" class="text-white hover:text-primary transition-colors">Serviços</a>
+                    <a href="#cases" class="text-white hover:text-primary transition-colors">Cases</a>
+                    <a href="#contato" class="text-white hover:text-primary transition-colors">Contato</a>
+                </div>
+                <!-- Mobile Navigation Button -->
+                <button class="md:hidden text-white hover:text-primary transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="#sobre" class="text-white hover:text-primary transition-colors">Sobre</a>
+                    <a href="#servicos" class="text-white hover:text-primary transition-colors">Serviços</a>
+                    <a href="#cases" class="text-white hover:text-primary transition-colors">Cases</a>
+                    <a href="#contato" class="text-white hover:text-primary transition-colors">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    // Form validation and submission
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Basic form validation
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const company = document.getElementById('company').value;
-      const message = document.getElementById('message').value;
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-8" data-aos="fade-right" data-aos-duration="1000">
+                        Transforme a Felicidade no Trabalho em Resultados
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-10 leading-relaxed" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                        Consultoria especializada em Gestão da Felicidade utilizando os modelos PERMA+4 e OCAI para criar ambientes de trabalho mais produtivos e satisfatórios.
+                    </p>
+                    <a href="#contato" class="bg-primary text-white px-8 py-4 rounded-full hover:bg-secondary transition-colors inline-block text-lg">
+                        Agende uma Consulta
+                    </a>
+                </div>
+                <div class="md:w-1/2 transform hover:scale-105 transition-transform duration-300" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./src/img_hero.webp" alt="Equipe feliz no trabalho" class="rounded-lg shadow-xl w-full hover:shadow-2xl transition-shadow duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
 
-      if (!name || !email || !company || !message) {
-        alert('Por favor, preencha todos os campos.');
-        return;
-      }
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-16" data-aos="fade-up">Nossos Modelos de Gestão</h2>
+            
+            <!-- PERMA+4 Model -->
+            <div class="mb-24">
+                <h3 class="text-2xl font-semibold text-primary mb-8">Modelo PERMA+4</h3>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            O modelo PERMA+4 é uma abordagem científica para medir e desenvolver o bem-estar no ambiente de trabalho, baseado em:
+                        </p>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                <span><strong>P</strong>ositive Emotions (Emoções Positivas)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                <span><strong>E</strong>ngagement (Engajamento)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                <span><strong>R</strong>elationships (Relacionamentos)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                <span><strong>M</strong>eaning (Significado)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                <span><strong>A</strong>ccomplishment (Realização)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-secondary p-8 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-6 text-white">Benefícios para sua empresa:</h4>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-primary mr-3"></i>
+                                Aumento da produtividade
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-primary mr-3"></i>
+                                Redução do turnover
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-primary mr-3"></i>
+                                Melhoria do clima organizacional
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-star text-primary mr-3"></i>
+                                Maior engajamento dos colaboradores
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-      if (!isValidEmail(email)) {
-        alert('Por favor, insira um e-mail válido.');
-        return;
-      }
+            <!-- OCAI Model -->
+            <div>
+                <h3 class="text-2xl font-semibold text-primary mb-8">Modelo OCAI</h3>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-secondary p-8 rounded-lg">
+                        <h4 class="text-xl font-semibold mb-6 text-white">Vantagens do OCAI:</h4>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-chart-line text-primary mr-3"></i>
+                                Diagnóstico preciso da cultura organizacional
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-chart-line text-primary mr-3"></i>
+                                Identificação de gaps culturais
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-chart-line text-primary mr-3"></i>
+                                Planejamento estratégico eficiente
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-chart-line text-primary mr-3"></i>
+                                Gestão de mudanças assertiva
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            O Organizational Culture Assessment Instrument (OCAI) é uma ferramenta poderosa para avaliar e transformar a cultura organizacional, permitindo:
+                        </p>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                Mapeamento da cultura atual
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                Definição da cultura desejada
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                Plano de ação personalizado
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-3"></i>
+                                Métricas de acompanhamento
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      // Aqui você enviaria os dados para o servidor
-      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-      contactForm.reset();
-    });
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-16" data-aos="fade-up">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Pesquisa da Felicidade -->
+                <div class="bg-dark rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-6 text-white">Pesquisa da Felicidade</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Diagnóstico completo do nível de felicidade e bem-estar dos colaboradores através de metodologias científicas validadas.
+                    </p>
+                    <ul class="space-y-4 mb-6 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Questionários personalizados
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Análise de dados
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Relatórios detalhados
+                        </li>
+                    </ul>
+                </div>
 
-    function isValidEmail(email) {
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email);
-    }
-  </script>
+                <!-- Consultoria Personalizada -->
+                <div class="bg-dark rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-6 text-white">Consultoria Personalizada</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Desenvolvimento de estratégias e ações específicas para melhorar o ambiente organizacional.
+                    </p>
+                    <ul class="space-y-4 mb-6 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Plano de ação customizado
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Workshops e treinamentos
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Acompanhamento contínuo
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Análise de Resultados -->
+                <div class="bg-dark rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-primary text-4xl mb-6">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-6 text-white">Análise de Resultados</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Mensuração e avaliação dos impactos das ações implementadas na organização.
+                    </p>
+                    <ul class="space-y-4 mb-6 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Indicadores de performance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Métricas de satisfação
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3"></i>
+                            Recomendações de melhorias
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-16" data-aos="fade-up">Cases de Sucesso</h2>
+            
+            <!-- Carousel Container -->
+            <div class="relative" id="carousel">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-500" id="carousel-inner">
+                        <!-- Carousel Items -->
+                        <div class="w-full flex-shrink-0 flex items-center justify-center p-8">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_sespa.png" alt="Cliente 1" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_leal_moreira.png" alt="Cliente 2" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_oab.png" alt="Cliente 3" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                  <img src="./src/logo_dicasa.png" alt="Cliente 4" class="w-50 h-50">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex-shrink-0 flex items-center justify-center p-8">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_farmalider.png" alt="Cliente 4" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_agua_camelo.png" alt="Cliente 5" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                    <img src="./src/logo_sespa.png" alt="Cliente 6" class="w-50 h-50">
+                                </div>
+                                <div class="bg-secondary p-8 rounded-lg flex items-center justify-center hover:bg-dark transition-colors">
+                                  <img src="./src/logo_leal_moreira.png" alt="Cliente 4" class="w-50 h-50">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-dark p-3 rounded-full shadow-lg hover:bg-secondary" id="prev-button">
+                    <i class="fas fa-chevron-left text-primary hover:text-white transition-colors"></i>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark p-3 rounded-full shadow-lg hover:bg-secondary" id="next-button">
+                    <i class="fas fa-chevron-right text-primary hover:text-white transition-colors"></i>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="flex justify-center mt-8">
+                    <button class="h-3 w-3 rounded-full bg-primary mx-2 hover:bg-secondary transition-colors" data-slide="0"></button>
+                    <button class="h-3 w-3 rounded-full bg-gray-300 mx-2 hover:bg-primary transition-colors" data-slide="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-24 bg-secondary">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-16" data-aos="fade-up">Entre em Contato</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-8">
+                    <div>
+                        <label for="name" class="block text-white mb-3">Nome</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-white mb-3">E-mail</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-white mb-3">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-dark text-white"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full bg-primary text-white py-4 px-8 rounded-lg hover:bg-secondary transition-colors text-lg font-medium">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-6 max-w-screen-lg">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <img src="./src/PatrickBiá_marca_H_negativa.png" alt="Logo Patrick Biá" class="w-32 mb-4">
+            <img src="./src/slogan_footer.png" alt="Slogan" class="w-60 mb-4">
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Contato</h3>
+            <div class="space-y-2 text-gray-300">
+              <p><i class="fas fa-envelope mr-2 text-[#FF9100]"></i> patrickfbv@gmail.com</p>
+              <p><i class="fas fa-phone mr-2 text-[#FF9100]"></i> (91) 9 8297-8579</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Redes Sociais</h3>
+            <div class="flex space-x-4">
+              <a href="https://www.linkedin.com/in/patrick-biá-viana-24338352" class="text-gray-300 hover:text-[#FF9100]">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+              <a href="https://www.instagram.com/patrickbiaviana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-300 hover:text-[#FF9100]">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-[#FF9100]">
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 Patrick Biá. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Carousel functionality
+        const carousel = document.getElementById('carousel-inner');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+        const indicators = document.querySelectorAll('[data-slide]');
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide) {
+                    indicator.classList.remove('bg-gray-300');
+                    indicator.classList.add('bg-primary');
+                } else {
+                    indicator.classList.remove('bg-primary');
+                    indicator.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        // Auto-advance carousel
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }, 5000);
+
+        // Form Validation
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+            
+            if (!email.includes('@')) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+            
+            // Here you would typically send the form data to a server
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            contactForm.reset();
+        });
+    </script>
+
+    <!-- AOS Library Initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
